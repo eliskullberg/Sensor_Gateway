@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<style type="text/css">
+p
+{
+color: black;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+}
+</style>
+
+
+</head>
+<body>
+<form action="../api/get_png.py" method="get">
+<p>Present data from: <input type="text" name="time" value ="30" size="3"/>
+<select name="timeUnit">
+<option value="min">minutes ago</option>
+<option value="h">hours ago</option>
+</select> <br>
+For team-member: <select name="patientId">
+<option value="elis" selected = "selected">Elis Kullberg</option>
+<option value="bowei">Bowei Dai</option>
+<option value="hannes">Hannes Junnila</option>
+<option value="nur">Nur Mohammad Rashed</option>
+<option value="siddharth">Siddharth Madan</option>
+<<option value="simulator">Simulated Patient</option>
+<option value="vasily">Vasiliy Prokopov</option>
+</select><br/>
+<input type="checkbox" name="spo2" value="on" checked="checked"/> Enable SPO2<br/>
+<input type="checkbox" name="hr" value="on" checked="checked"/> Enable Heart rate<br/>
+<input type="submit" value="Generate graph!" />
+</form>
+</p>
+</body>
+</html>
